@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moved Permanently</title>
+
+  <meta http-equiv="refresh" content="0; url=https://rezydev.com/">
+
+  <script>
+    const newDomain = "https://rezydev.com";
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace(newDomain + path);
+  </script>
+
+  <link rel="canonical" href="https://rezydev.com/">
+</head>
+<body>
+  <p>Site moved permanently.</p>
+  <p>If you are not redirected automatically, 
+     <a id="manual-link" href="https://rezydev.com/">click here</a>.
+  </p>
+
+  <script>
+    document.getElementById("manual-link").href =
+      "https://rezydev.com" +
+      window.location.pathname +
+      window.location.search +
+      window.location.hash;
+  </script>
+</body>
+</html>
